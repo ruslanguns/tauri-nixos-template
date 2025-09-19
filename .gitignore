@@ -1,0 +1,23 @@
+# Dependencies & build artifacts
+node_modules/
+dist/
+/target/
+src-tauri/target/
+
+# Package manager noise
+.pnpm-debug.log*
+.pnpm-store/
+
+# Dev tooling
+.envrc
+.direnv/
+.vscode/
+.wine-tauri/
+.nix-makensis/
+
+# OS & editor cruft
+.DS_Store
+Thumbs.db
+*.log
+*.tmp
+*.swp
