@@ -72,7 +72,7 @@
               dbus
               alsa-lib
               fontconfig
-              pnpm
+              bun
               git
               nsis
               wineWowPackages.staging
@@ -84,7 +84,7 @@
           TAURI_NSIS_WINDOWS_HOME = "${nsisWindows}";
 
           shellHook = ''
-                        echo "Loaded Tauri dev shell. Run 'pnpm install' followed by 'pnpm tauri dev'."
+                        echo "Loaded Tauri dev shell. Run 'bun install' followed by 'bun run tauri dev'."
                         export WINEPREFIX="''${HOME}/.wine-tauri"
                         mkdir -p "$WINEPREFIX"
                         if ! [ -d "$WINEPREFIX/drive_c" ]; then
